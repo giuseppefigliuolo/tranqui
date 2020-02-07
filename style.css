@@ -8,11 +8,12 @@
 }
 body{
    /* font-family: 'Quicksand', sans-serif;*/
-    font-size: 16px; 
+    font-size: 18px; 
     font-family: 'Source Sans Pro', sans-serif;
+    color: #2d2d2d;
 
 }
-h2,h3,h4,h5,a{
+h2,h3,h4,h5{
     font-family: 'Staatliches', 'Arial', sans-serif;
     font-weight: normal;
     letter-spacing: 1px;
@@ -65,7 +66,8 @@ nav{
 .contact_menu a{
     color: black;
     text-decoration: none;
-    font-size: 21px;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 .search_bar{
     padding-right: 40px;
@@ -93,6 +95,7 @@ nav{
     height: 3px;
     background-color: black;
     margin: 5px;
+    margin-right: 20px;
     transition: all 0.1s ease;
 }
 li.hidden{
@@ -103,40 +106,42 @@ li.hidden{
 #banner{
     width: 100%;
     height: 750px;
-    background: url(img/navigli.jpg) no-repeat center center;
+    background: url(img/navigli1.jpg) no-repeat center center;
     background-size: cover;
 }
 /*
     chi siamo home page
 */
 main.chi_siamo{
-    margin-top: 40px;
-    margin-bottom: 70px;
-    text-align: center;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 20px 5px 80px 5px;
+    text-align: center;   
 }
 main.chi_siamo .colonna{
     width: 50%;
 }
 main.chi_siamo h4{
     font-size: 42px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 main.chi_siamo p{
-    font-size: 18px;
+    font-size: 20px;
+    text-align: left;
 }
 main.chi_siamo img{
     text-align: right;
+    align-items: center;
+    align-content: center;
+    padding-top: 30px;
 }
 .puls_chi_siamo {
     /*outline: none;*/
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    font: bold 16px;
+    font-size:  16px;
+    letter-spacing: 2px;
     color: #fff;
-    margin-top: 30px;
+    margin-top: 15px;
     padding: 10px 10px;
     background: black;
     }
@@ -209,6 +214,8 @@ article.colonna a.tag_home{
 }
 article.colonna a.tag_home.yellow{
     color: #fedf6e;
+    text-transform: uppercase;
+
 }
 article.colonna a.tag_home.green{
     color: #1bcf81;
@@ -338,8 +345,7 @@ div.intro_pag{
 }
 div.intro_pag p{
     text-align: left;
-    font-size: 21px; 
-    font-weight: bold;
+    font-size: 24px; 
 }
 /* Filter and search options */
 #buttons, #search {
@@ -385,6 +391,9 @@ article.colonna.trenta div.info_utili{
     padding: 15px 15px;
     margin-bottom: 20px;
 }
+article.colonna.trenta div.info_utili p{
+    font-size: 16px;
+}
 main.articoli_correl{
     margin-left: 50px;
     margin-right: 50px;
@@ -407,11 +416,34 @@ article.colonna h5.our_name{
    font-size: 32px;
    text-align: center;
 }
+main.chi_siamo p{
+    text-align: left;
+}
+hr.our_presentation{
+    margin-left: 0px;
+    margin-right: 0px;
+   
+      border: 0.5px solid black;
+}
+
 
 @media screen and (max-width:1024px){
     .nav-links{
         width: 60%;
     }
+    /*riduco margin top e bottom di chi_siamo home*/
+    main.chi_siamo{
+        margin: 20px 5px 50px 5px;
+        text-align: center;   
+    }
+    main .colonna p{
+        font-size: 18px;
+    }  
+    /*intro delle category*/
+    div.intro_pag{
+        padding: 30px 50px 10px 50px;
+        text-align: center;
+        }
     /*single page*/
     main.articoli_correl{
         margin-left: 5px;
@@ -459,7 +491,7 @@ article.colonna h5.our_name{
        display: block;
    }
    /* inizio con gli altri query*/
-   div.nostra_idea{
+  /* div.nostra_idea{
     padding: 20px 10px;
     text-align: center;
     }
@@ -468,7 +500,7 @@ article.colonna h5.our_name{
     }
     article.colonna.different{
         margin-top: 1px;
-    }
+    }*/
     main{
         padding-left: 5px;
         padding-right: 5px;
@@ -478,10 +510,13 @@ article.colonna h5.our_name{
     }
     main.chi_siamo{
         margin-top: 5px;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
         text-align: center;
         margin-left: 5px;
         margin-right: 5px;
+    }
+    main.chi_siamo img.foto_team{
+        display: none;
     }
     main .colonna{
         width: 50%;
@@ -489,6 +524,7 @@ article.colonna h5.our_name{
         /*text-align: center;*/
         margin-top: 15px;
     }
+
     article.colonna.show_mobile{
         display: block;
     }
@@ -512,9 +548,8 @@ article.colonna h5.our_name{
     text-align: center;
     }
     div.intro_pag p{
-        text-align: center;
+        text-align: left;
         font-size: 21px; 
-        font-weight: bold;
     }   
     /*single article*/
     main.single_article .colonna.trenta{
