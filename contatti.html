@@ -9,36 +9,47 @@
     <!-- carico il file per le icone Fontawesome -->
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <!-- link google font -->
+    
     <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap" rel="stylesheet">
 </head>
-
-
+    
 
 
 <body>
-    <header>
-        <nav class="logo">
+    <nav>
+        <div class="logo">
             <a href="index.html">
-                <img src="img/logo.svg" alt="logo blog" width="70%" > 
+                <img src="img/logotranqui.svg" alt="" width="100" height="auto">
             </a>
-        </nav>
-        <nav class="centrata">
-            <ul>
-                <li><a href="in_citta.html">in città</a></li>
-                <li><a href="fuori_citta.html">fuori città</a></li>
-                <li><a href="lifestyle.html">lifestyle</a></li>
-                <li><a href="chi_siamo.html">chi siamo?</a></li>
-            </ul>
-        </nav>
-        <nav class="a_dx">
-            <ul>
-                <li><i class="fas fa-search"></i></li>
-                <li><a href="contact"></a>contatti</li>
-            </ul>
-        </nav>
-    </header>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="in_citta.html">In città</a>
+            </li>
+            <li>
+                <a href="fuori_citta.html">Fuori città</a>
+            </li>
+            <li>
+                <a href="lifestyle.html">Lifestyle</a>
+            </li>
+            <li>
+                <a href="chi_siamo.html">Chi siamo</a>
+            </li>
+            <!--<li class="hidden">
+                <a href="#">Contatti</a>
+            </li>-->
+        </ul>
+            <div class="contact_menu">
+                <li class="search_bar"><a href="#"><i class="fas fa-search"></i></a></li>
+            </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
     <div class="nostra_idea">
         <h1 class="title">contattaci</h1>
         <p class="intro">" Abbiamo deciso di iniziare questo progetto cercando di vedere la città di Milano sotto una luce diversa.
@@ -48,11 +59,6 @@
     </div>
   
 
-
-
-
-
-    
 <div class="inner contact">
   <!-- Form Area -->
   <div class="contact-form">
@@ -85,21 +91,40 @@
           
       </form>
 
+    </div>
+    <footer>
+        <div class="colonna" id="disclaimer">
+            <h5>Disclaimer</h5>
+            <p>Questo sito è stato creato a scopo didattico, 
+               dagli allievi del primo anno Scuola Web & App Mohole.
+               Le situazioni create sono immaginarie e create per produrre 
+               contenuti dimostrativi fittizi.
+            </p>
+    </div>  
     
-   
-
-      <div class="center">
-        <div id="social-test">
-        <ul class="social">
-          <li><a href="https://www.facebook.com/milanoverde/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li><a href="https://twitter.com/colorlib"><i class="fa fa-twitter" aria-hidden="true"></a></i></li>
-          <li><a href="https://instagram.com/colorlib"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-        </li>
-        </ul>
-      
+    <div class="colonna">
+        
+           
+    </div>                    
+    <div class="colonna"> 
+       <!--<h5>be social</h5> -->  
+                  
+        <div class="menu_social">                      
+        <a href="https://www.facebook.com/mohole/" id="fb" title="facebook" target="_blank">
+            <i class="fab fa-facebook-square" style="font-size:36px"></i>
+        </a>
+        <a href="https://www.instagram.com/scuolamohole/?hl=it" id="fb" title="instagram" target="_blank">
+            <i class="fab fa-instagram" style="font-size:36px"></i>
+        </a>                        
+        <a href="https://www.youtube.com/channel/UCOu3XN2DB6lFEQTIeo41Nxw" id="yt" title="youtube" target="_blank">
+            <i class="fab fa-youtube" style="font-size:36px"></i>
+        </a>                             
         </div>
-      </div>
-        </div>
+    </div> 
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/filter-tags.js"></script>
 
         
 </body>
