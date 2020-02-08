@@ -161,11 +161,13 @@ button.categoria{
     margin-left: 50px;
     font-size: 42px;
 }
-button.categoria.yellow{
+button.categoria.yellow,
+article.colonna.trenta div.info_utili.yellow{
     background: #fedf6e;
 }
-button.categoria.green{
-    background-color: #1bcf81;
+button.categoria.green,
+article.colonna.trenta div.info_utili.green{
+    background: #1bcf81;
 }
 button.categoria.orange{
     background: #ff7f50;
@@ -215,7 +217,6 @@ article.colonna a.tag_home{
 article.colonna a.tag_home.yellow{
     color: #fedf6e;
     text-transform: uppercase;
-
 }
 article.colonna a.tag_home.green{
     color: #1bcf81;
@@ -387,7 +388,6 @@ main.single_article .colonna.settanta{
     width: 65%;
 }
 article.colonna.trenta div.info_utili{
-    background-color: #fedf6e;
     padding: 15px 15px;
     margin-bottom: 20px;
 }
@@ -588,3 +588,17 @@ hr.our_presentation{
 /* end menu animation */
 
 
+
+
+
+
+/* Search input */
+input {
+	font-size: 120%;
+	border: 1px solid #999;
+	padding: 5px;}
+input:hover {
+	border: 1px solid #666;}
+input:focus {
+	border: 1px solid #00cccc;
+	outline: none;}
