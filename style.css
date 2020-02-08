@@ -490,6 +490,9 @@ hr.our_presentation{
    li.hidden{
        display: block;
    }
+   h1{
+       font-size: 90px;
+   }
    /* inizio con gli altri query*/
   /* div.nostra_idea{
     padding: 20px 10px;
@@ -559,6 +562,24 @@ hr.our_presentation{
         width: 100%;
     } 
 }
+/*da iPhone plus in giù*/
+@media screen and (max-width:500px){
+    main .colonna{
+        width: 100%;
+        padding: 10px 10px;
+        /*text-align: center;*/
+        margin-top: 15px;
+    }
+    article.colonna.show_mobile{
+        display: none;
+    }
+    /*last 3 article are hidden*/
+    article.colonna.sparisci{
+        display: block;
+    }
+}
+
+
 
 .nav-active{
     transform: translateX(0%);
@@ -586,11 +607,6 @@ hr.our_presentation{
     transform: rotate(45deg) translate(-5px,-6px);
 }
 /* end menu animation */
-
-
-
-
-
 
 /* Search input */
 input {
