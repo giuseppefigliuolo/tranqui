@@ -162,14 +162,17 @@ button.categoria{
     font-size: 42px;
 }
 button.categoria.yellow,
-article.colonna.trenta div.info_utili.yellow{
+article.colonna.trenta div.info_utili.yellow,
+button.small.yellow{
     background: #fedf6e;
 }
 button.categoria.green,
-article.colonna.trenta div.info_utili.green{
+article.colonna.trenta div.info_utili.green,
+button.small.green{
     background: #1bcf81;
 }
-button.categoria.orange{
+button.categoria.orange,
+button.small.orange{
     background: #ff7f50;
 }
 /*
@@ -189,9 +192,19 @@ main .colonna{
 }
 main .colonna h3{
    font-size: 21px;
-   margin-top: 10px;
-   margin-bottom: 10px;
+   margin-top: 5px;
+   margin-bottom: 5px;
    text-align: center;
+}
+button.small{
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #2d2d2d;
+    padding: 3px 3px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    font-size: 12px;
 }
 main .colonna p{
     font-size: 18px;
@@ -412,12 +425,22 @@ main.articoli_correl .colonna{
  }
  
 /*pag. chi siamo*/
+
+main.presentazione .colonna.nostra_foto{
+    width: 35%;
+    text-align: center;
+}
+main.presentazione .colonna.settanta{
+    width: 65%;
+}
+
 article.colonna h5.our_name{
    font-size: 32px;
    text-align: center;
 }
-main.chi_siamo p{
+main.presentazione p{
     text-align: left;
+    font-size: 20px;
 }
 hr.our_presentation{
     margin-left: 0px;
@@ -561,6 +584,19 @@ hr.our_presentation{
     main.single_article .colonna.settanta{
         width: 100%;
     } 
+    /*pagina chi siamo*/
+    main.presentazione .colonna.nostra_foto{
+        width: 100%;
+    }
+    main.presentazione .colonna.nostra_foto img{
+        text-align: center;
+    }
+    main.presentazione .colonna.settanta{
+        width: 100%;
+    } 
+    main.presentazione img{
+        text-align: center;
+    }
 }
 /*da iPhone plus in giù*/
 @media screen and (max-width:500px){
