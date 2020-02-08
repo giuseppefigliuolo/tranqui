@@ -196,6 +196,9 @@ main .colonna h3{
    margin-bottom: 5px;
    text-align: center;
 }
+main .colonna h3 a:hover{
+    color:red;
+}
 button.small{
     cursor: pointer;
     text-align: center;
@@ -222,7 +225,7 @@ article.colonna a{
    text-align: left;
 } 
 article.colonna a:hover{
-    opacity:0.9;
+    opacity:0.8;
 }
 article.colonna a.tag_home{
     font-family: 'Staatliches', 'Arial', sans-serif;
@@ -363,7 +366,7 @@ div.intro_pag p{
 }
 /* Filter and search options */
 #buttons, #search {
-    margin: 70px 5px 30px 5px;
+    margin: 50px 5px 30px 5px;
     text-align: left;
 }
 /* Filter buttons */
@@ -371,7 +374,7 @@ div.intro_pag p{
 	background-color: #2d2d2d;
     margin-right: 5px;
     margin-left: 50px;
-	padding: 4px 10px 4px 10px;
+    padding: 4px 10px 4px 10px;
     color: white;
     font-family: 'Quicksand', sans-serif;
     font-size: 100%;
@@ -516,17 +519,6 @@ hr.our_presentation{
    h1{
        font-size: 90px;
    }
-   /* inizio con gli altri query*/
-  /* div.nostra_idea{
-    padding: 20px 10px;
-    text-align: center;
-    }
-    div.nostra_idea p{
-        font-size: 18px; 
-    }
-    article.colonna.different{
-        margin-top: 1px;
-    }*/
     main{
         padding-left: 5px;
         padding-right: 5px;
@@ -597,6 +589,14 @@ hr.our_presentation{
     main.presentazione img{
         text-align: center;
     }
+    /* filter buttons*/
+    .js-filterbar button{
+        margin-top: 10px;
+    }
+    #buttons, #search {
+        margin: 20px 0px 20px 0px;
+        text-align: left;
+    }
 }
 /*da iPhone plus in giù*/
 @media screen and (max-width:500px){
@@ -644,7 +644,7 @@ hr.our_presentation{
 }
 /* end menu animation */
 
-/* Search input */
+/* Search input 
 input {
 	font-size: 120%;
 	border: 1px solid #999;
@@ -653,4 +653,5 @@ input:hover {
 	border: 1px solid #666;}
 input:focus {
 	border: 1px solid #00cccc;
-	outline: none;}
+    outline: none;}*/
+   
