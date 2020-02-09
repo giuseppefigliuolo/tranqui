@@ -411,8 +411,8 @@ article.colonna.trenta div.info_utili p{
     font-size: 16px;
 }
 main.articoli_correl{
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 main.articoli_correl .colonna{
     width: 20%;
@@ -423,7 +423,7 @@ main.articoli_correl .colonna{
  h4.art_corr{
      text-align: center;
      font-size: 32px;
-     margin-top: 80px;
+     margin-top: 30px;
      margin-bottom: 5px;
  }
  
@@ -448,8 +448,8 @@ main.presentazione p{
 hr.our_presentation{
     margin-left: 0px;
     margin-right: 0px;
-   
-      border: 0.5px solid black;
+    border: 0.5px solid black;
+    margin-top: 30px;
 }
 
 
@@ -491,6 +491,13 @@ hr.our_presentation{
         text-align: left;
       
     } 
+    /*articoli correlati*/
+    main.articoli_correl .colonna{
+        width: 25%;
+     }
+     article.colonna.via_1200{
+         display: none;
+     }
 }
 @media screen and (max-width:768px){
     body{
@@ -553,7 +560,6 @@ hr.our_presentation{
         /*text-align: center;*/
         margin-top: 15px;
     }
-
     article.colonna.show_mobile{
         display: block;
     }
@@ -584,6 +590,18 @@ hr.our_presentation{
     main.single_article .colonna.trenta{
         width: 100%;
     }
+    h2.page_title{
+        font-size: 30px;
+        padding-top: 15px;
+        text-align: center;
+    }
+    /*articoli correlati*/
+    main.articoli_correl .colonna{
+        width: 33.33%;
+     }
+     article.colonna.via_768{
+         display: none;
+     }
     main.single_article .colonna.settanta{
         width: 100%;
     } 
@@ -608,8 +626,7 @@ hr.our_presentation{
     }
     #buttons, #search {
         margin: 20px 0px 20px 0px;
-        text-align: left;
-      
+        text-align: left; 
     } 
 }
 /*da iPhone plus in giù*/
@@ -627,9 +644,13 @@ hr.our_presentation{
     article.colonna.sparisci{
         display: block;
     }
+    main.articoli_correl .colonna{
+        width: 50%;
+     }
+     article.colonna.via_mobile{
+         display: none;
+     }
 }
-
-
 
 .nav-active{
     transform: translateX(0%);
