@@ -304,7 +304,7 @@ footer {
     color: #2d2d2d;
     height: 150px;
     margin-top: 40px;
-    padding: 0px 20px;
+    padding: 0px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -329,10 +329,12 @@ footer .menu_social {
 }
 /* i link portano ai social di MOHOLE */
 .fab {
-    padding-left: 20px;
+    padding-left: 55px;
+    font-size:36px;
 }
 footer a {
     opacity: 1;
+    
 }
 footer p {
     font-size: 12px;
@@ -424,7 +426,7 @@ main.articoli_correl .colonna{
      text-align: center;
      font-size: 32px;
      margin-top: 30px;
-     margin-bottom: 5px;
+     margin-bottom: 25px;
  }
  
 /*pag. chi siamo*/
@@ -470,6 +472,11 @@ hr.our_presentation{
         padding: 30px 50px 10px 50px;
         text-align: center;
         }
+    /* i link portano ai social di MOHOLE */
+.fab {
+    padding-left: 35px;
+    font-size:36px;
+}
     /*single page*/
     main.articoli_correl{
         margin-left: 5px;
@@ -577,6 +584,11 @@ hr.our_presentation{
         margin-right: 10px;
         margin-bottom: 20px;
       }
+    /* i link portano ai social di MOHOLE */
+.fab {
+    padding-left: 25px;
+    font-size:33px;
+}
     /*paragrafo titoli in citta / fuori città / lifestyle*/
     div.intro_pag{
     padding: 30px 15px 10px 15px;
@@ -650,6 +662,11 @@ hr.our_presentation{
      article.colonna.via_mobile{
          display: none;
      }
+     /* i link portano ai social di MOHOLE */
+.fab {
+    padding-left: 13px;
+    font-size:27px;
+}
 }
 
 .nav-active{
