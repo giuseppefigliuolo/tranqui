@@ -217,6 +217,9 @@ main .colonna p{
    -webkit-hyphens: auto; /*old versions of Crhome e Safari*/
    -ms-hyphens: auto; /*old versions of IE*/
 }  
+main.chi_siamo p{
+    hyphens: none;
+}
 article.colonna a{
    color: black;
    text-decoration: none;
