@@ -112,22 +112,22 @@ li.hidden{
 /*
     chi siamo home page
 */
-main.chi_siamo{
+section.chi_siamo{
     margin: 20px 5px 80px 5px;
     text-align: center;   
 }
-main.chi_siamo .colonna{
+section.chi_siamo .colonna{
     width: 50%;
 }
-main.chi_siamo h4{
+section.chi_siamo h4{
     font-size: 42px;
     padding-bottom: 5px;
 }
-main.chi_siamo p{
+section.chi_siamo p{
     font-size: 20px;
     text-align: left;
 }
-main.chi_siamo img{
+section.chi_siamo img{
     text-align: right;
     align-items: center;
     align-content: center;
@@ -178,25 +178,25 @@ button.small.orange{
 /*
  *   Struttura a 3 colonne
  */
-main{
+section{
     display: flex;
     flex-wrap: wrap; /*va a capo quando non c'è più spazio.*/
     padding-left: 30px;
     padding-right: 30px;
 }
-main .colonna{
+section .colonna{
    width: 33.333%;
    padding: 5px 25px;
    /*text-align: center;*/
    margin-top: 30px;
 }
-main .colonna h3{
+section .colonna h3{
    font-size: 21px;
    margin-top: 5px;
    margin-bottom: 5px;
    text-align: center;
 }
-main .colonna h3 a:hover{
+section .colonna h3 a:hover{
     color:red;
 }
 button.small{
@@ -209,7 +209,7 @@ button.small{
     margin-bottom: 5px;
     font-size: 12px;
 }
-main .colonna p{
+section .colonna p{
     font-size: 18px;
    padding-bottom: 10px;
    text-align: justify;
@@ -217,7 +217,7 @@ main .colonna p{
    -webkit-hyphens: auto; /*old versions of Crhome e Safari*/
    -ms-hyphens: auto; /*old versions of IE*/
 }  
-main.chi_siamo p{
+section.chi_siamo p{
     hyphens: none;
 }
 article.colonna a{
@@ -402,10 +402,10 @@ aside.banner_single p{
     font-size: 40px;
     text-align: center;
 }
-main.single_article .colonna.trenta{
+section.single_article .colonna.trenta{
     width: 35%;
 }
-main.single_article .colonna.settanta{
+section.single_article .colonna.settanta{
     width: 65%;
 }
 article.colonna.trenta div.info_utili{
@@ -415,11 +415,11 @@ article.colonna.trenta div.info_utili{
 article.colonna.trenta div.info_utili p{
     font-size: 16px;
 }
-main.articoli_correl{
+section.articoli_correl{
     margin-left: 5px;
     margin-right: 5px;
 }
-main.articoli_correl .colonna{
+section.articoli_correl .colonna{
     width: 20%;
     padding: 5px 5px;
     text-align: center;
@@ -434,11 +434,11 @@ main.articoli_correl .colonna{
  
 /*pag. chi siamo*/
 
-main.presentazione .colonna.nostra_foto{
+section.presentazione .colonna.nostra_foto{
     width: 35%;
     text-align: center;
 }
-main.presentazione .colonna.settanta{
+section.presentazione .colonna.settanta{
     width: 65%;
 }
 
@@ -446,7 +446,7 @@ article.colonna h5.our_name{
    font-size: 32px;
    text-align: center;
 }
-main.presentazione p{
+section.presentazione p{
     text-align: left;
     font-size: 20px;
 }
@@ -457,17 +457,93 @@ hr.our_presentation{
     margin-top: 30px;
 }
 
+/* form contatti */   
+.containe {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    /*position: relative;*/
+  }
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea,
+  #contact button[type="submit"] {
+    font: 400 12px/16px "Source Sans Pro", Helvetica, Arial, sans-serif;
+  }
+  #contact {
+    padding: 25px;
+    margin: 20px 0;
+   /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);*/
+  }
+  #contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  #contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+  }
+  #contact input[type="text"]:hover,
+  #contact input[type="email"]:hover,
+  #contact input[type="tel"]:hover,
+  #contact input[type="url"]:hover,
+  #contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+  }
+  #contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+  }
+  #contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: black;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+  }
 
+/* MEDIA QUERY */
 @media screen and (max-width:1024px){
     .nav-links{
         width: 60%;
     }
     /*riduco margin top e bottom di chi_siamo home*/
-    main.chi_siamo{
+    section.chi_siamo{
         margin: 20px 5px 50px 5px;
         text-align: center;   
     }
-    main .colonna p{
+    section .colonna p{
         font-size: 18px;
     }  
     /*intro delle category*/
@@ -481,12 +557,12 @@ hr.our_presentation{
     font-size:36px;
 }
     /*single page*/
-    main.articoli_correl{
+    section.articoli_correl{
         margin-left: 5px;
         margin-right: 5px;
     }
     /*single page*/
-    main.articoli_correl{
+    section.articoli_correl{
         margin-left: 5px;
         margin-right: 5px;
     } 
@@ -502,7 +578,7 @@ hr.our_presentation{
       
     } 
     /*articoli correlati*/
-    main.articoli_correl .colonna{
+    section.articoli_correl .colonna{
         width: 25%;
      }
      article.colonna.via_1200{
@@ -547,24 +623,24 @@ hr.our_presentation{
    h1{
        font-size: 90px;
    }
-    main{
+    section{
         padding-left: 5px;
         padding-right: 5px;
    }
-   main.chi_siamo .colonna{
+   section.chi_siamo .colonna{
     width: 100%;
     }
-    main.chi_siamo{
+    section.chi_siamo{
         margin-top: 5px;
         margin-bottom: 10px;
         text-align: center;
         margin-left: 5px;
         margin-right: 5px;
     }
-    main.chi_siamo img.foto_team{
+    section.chi_siamo img.foto_team{
         display: none;
     }
-    main .colonna{
+    section .colonna{
         width: 50%;
         padding: 10px 10px;
         /*text-align: center;*/
@@ -602,7 +678,7 @@ hr.our_presentation{
         font-size: 21px; 
     }   
     /*single article*/
-    main.single_article .colonna.trenta{
+    section.single_article .colonna.trenta{
         width: 100%;
     }
     h2.page_title{
@@ -611,26 +687,26 @@ hr.our_presentation{
         text-align: center;
     }
     /*articoli correlati*/
-    main.articoli_correl .colonna{
+    section.articoli_correl .colonna{
         width: 33.33%;
      }
      article.colonna.via_768{
          display: none;
      }
-    main.single_article .colonna.settanta{
+    section.single_article .colonna.settanta{
         width: 100%;
     } 
     /*pagina chi siamo*/
-    main.presentazione .colonna.nostra_foto{
+    section.presentazione .colonna.nostra_foto{
         width: 100%;
     }
-    main.presentazione .colonna.nostra_foto img{
+    section.presentazione .colonna.nostra_foto img{
         text-align: center;
     }
-    main.presentazione .colonna.settanta{
+    section.presentazione .colonna.settanta{
         width: 100%;
     } 
-    main.presentazione img{
+    section.presentazione img{
         text-align: center;
     }
     /* selezione categorie filter buttons*/
@@ -646,7 +722,7 @@ hr.our_presentation{
 }
 /*da iPhone plus in giù*/
 @media screen and (max-width:500px){
-    main .colonna{
+    section .colonna{
         width: 100%;
         padding: 10px 10px;
         /*text-align: center;*/
@@ -659,7 +735,7 @@ hr.our_presentation{
     article.colonna.sparisci{
         display: block;
     }
-    main.articoli_correl .colonna{
+    section.articoli_correl .colonna{
         width: 50%;
      }
      article.colonna.via_mobile{
@@ -669,13 +745,11 @@ hr.our_presentation{
 .fab {
     padding-left: 13px;
     font-size:27px;
+    }
 }
-}
-
 .nav-active{
     transform: translateX(0%);
 }
-
 /* start menu animation */
 @keyframes navLinkFade{
     from{
@@ -687,7 +761,6 @@ hr.our_presentation{
         transform: translateX(0px);
     }
 }
-
 .toggle .line1{
     transform: rotate(-45deg) translate(-5px,6px);
 }
@@ -699,102 +772,8 @@ hr.our_presentation{
 }
 /* end menu animation */
 
-/* Search input 
-input {
-	font-size: 120%;
-	border: 1px solid #999;
-	padding: 5px;}
-input:hover {
-	border: 1px solid #666;}
-input:focus {
-	border: 1px solid #00cccc;
-    outline: none;}*/
 
-    /*form contatti*/
-   
-    .containe {
-        max-width: 600px;
-        width: 100%;
-        margin: 0 auto;
-        /*position: relative;*/
-      }
-      
-      #contact input[type="text"],
-      #contact input[type="email"],
-      #contact input[type="tel"],
-      #contact input[type="url"],
-      #contact textarea,
-      #contact button[type="submit"] {
-        font: 400 12px/16px "Source Sans Pro", Helvetica, Arial, sans-serif;
-      }
-      
-      #contact {
-        padding: 25px;
-        margin: 20px 0;
-       /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);*/
-      }
-      
-      #contact h3 {
-        display: block;
-        font-size: 30px;
-        font-weight: 300;
-        margin-bottom: 10px;
-      }
-      
-      #contact h4 {
-        margin: 5px 0 15px;
-        display: block;
-        font-size: 13px;
-        font-weight: 400;
-      }
-      
-      fieldset {
-        border: medium none !important;
-        margin: 0 0 10px;
-        min-width: 100%;
-        padding: 0;
-        width: 100%;
-      }
-      
-      #contact input[type="text"],
-      #contact input[type="email"],
-      #contact input[type="tel"],
-      #contact input[type="url"],
-      #contact textarea {
-        width: 100%;
-        border: 1px solid #ccc;
-        background: #FFF;
-        margin: 0 0 5px;
-        padding: 10px;
-      }
-      
-      #contact input[type="text"]:hover,
-      #contact input[type="email"]:hover,
-      #contact input[type="tel"]:hover,
-      #contact input[type="url"]:hover,
-      #contact textarea:hover {
-        -webkit-transition: border-color 0.3s ease-in-out;
-        -moz-transition: border-color 0.3s ease-in-out;
-        transition: border-color 0.3s ease-in-out;
-        border: 1px solid #aaa;
-      }
-      
-      #contact textarea {
-        height: 100px;
-        max-width: 100%;
-        resize: none;
-      }
-      
-      #contact button[type="submit"] {
-        cursor: pointer;
-        width: 100%;
-        border: none;
-        background: black;
-        color: #FFF;
-        margin: 0 0 5px;
-        padding: 10px;
-        font-size: 15px;
-      }
+
       
     
       
