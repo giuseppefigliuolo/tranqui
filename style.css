@@ -1,82 +1,763 @@
-*{
-    margin: 0px;
-    padding: 0px;
+ /*Reset CSS*/
+ *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
     box-sizing: border-box;
 }
+body{
+   /* font-family: 'Quicksand', sans-serif;*/
+    font-size: 18px; 
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #2d2d2d;
+
+}
+h2,h3,h4,h5{
+    font-family: 'Staatliches', 'Arial', sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+h1{
+    font-family: 'Cabin Sketch', cursive;
+    padding-top: 475px;
+    font-size: 120px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: white;
+}
+/*.active{
+    background-color: #ff7f50;
+    transition: all ease 0.8s;
+}*/
+
+aside#banner p{
+    font-family: 'Cabin Sketch', cursive; 
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+/* 
+ *   Inizio Menu 
+ */
 nav{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: center;/*centra verticalmente*/
     min-height: 8vh;
-    background-color: #5d4954;
+    background-color: white;
+    /* qui 
+    width:100%;
+    overflow: hidden;*/
+    
 }
 .logo{
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
 }
 .nav-links{
     display: flex;
+    text-align: center;
     justify-content: space-around;
-    width: 40%;
+    /*modificato da 50 a 100*/
+    width: 50%;
+    overflow: hidden;
 }
 .nav-links li{
     list-style: none;
 }
-.nav-links a{
-    color: rgb(226, 226, 226);
+.nav-links a,
+.contact_menu a{
+    color: black;
     text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.search_bar{
+    padding-right: 40px;
+    list-style: none;
+    text-decoration: none;
+}
+.contact_menu form{
+    border: 2px solid gray;
+    padding: 5px;
+    border-radius: 1%;
+}
+.nav-links a:hover,
+.contact_menu a:hover{
+    /*opacity: 0.3;*/
+    /*background-color: #ff7f50;
+    transition: all ease 0.8s;*/
+    text-decoration: underline;
 }
 .burger{
     display: none;
+    cursor: pointer;
 }
 .burger div{
     width: 25px;
     height: 3px;
-    background-color: rgb(226, 226, 226);
+    background-color: black;
     margin: 5px;
-    transition: all 0.3s ease;
+    margin-right: 20px;
+    transition: all 0.1s ease;
+}
+li.hidden{
+    display: none;
+}
+/* Fine Menu */
+
+#banner{
+    width: 100%;
+    height: 750px;
+    background: url(img/navigli1.jpg) no-repeat center center;
+    background-size: cover;
+}
+/*
+    chi siamo home page
+*/
+section.chi_siamo{
+    margin: 20px 5px 80px 5px;
+    text-align: center;   
+}
+section.chi_siamo .colonna{
+    width: 50%;
+}
+section.chi_siamo h4{
+    font-size: 42px;
+    padding-bottom: 5px;
+}
+section.chi_siamo p{
+    font-size: 20px;
+    text-align: left;
+}
+section.chi_siamo img{
+    text-align: right;
+    align-items: center;
+    align-content: center;
+    padding-top: 30px;
+}
+.puls_chi_siamo {
+    /*outline: none;*/
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size:  16px;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-top: 15px;
+    padding: 10px 10px;
+    background: black;
+    }
+.puls_chi_siamo :hover{
+    opacity: 0.6;
 }
 
+/*titoli categoria home*/
+button.categoria{
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #2d2d2d;
+    padding: 5px 50px;
+    font-family: 'Staatliches', 'Arial', sans-serif;
+    font-weight: normal;
+    margin-left: 50px;
+    font-size: 42px;
+}
+button.categoria.yellow,
+article.colonna.trenta div.info_utili.yellow,
+button.small.yellow{
+    background: #fedf6e;
+}
+button.categoria.green,
+article.colonna.trenta div.info_utili.green,
+button.small.green{
+    background: #1bcf81;
+}
+button.categoria.orange,
+button.small.orange{
+    background: #ff7f50;
+}
+/*
+ *   Struttura a 3 colonne
+ */
+section{
+    display: flex;
+    flex-wrap: wrap; /*va a capo quando non c'è più spazio.*/
+    padding-left: 30px;
+    padding-right: 30px;
+}
+section .colonna{
+   width: 33.333%;
+   padding: 5px 25px;
+   /*text-align: center;*/
+   margin-top: 30px;
+}
+section .colonna h3{
+   font-size: 21px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   text-align: center;
+}
+section .colonna h3 a:hover{
+    color:red;
+}
+button.small{
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #2d2d2d;
+    padding: 3px 3px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+section .colonna p{
+    font-size: 18px;
+   padding-bottom: 10px;
+   text-align: justify;
+   hyphens: auto; /*testo giustificato  sillabato (a capo)*/
+   -webkit-hyphens: auto; /*old versions of Crhome e Safari*/
+   -ms-hyphens: auto; /*old versions of IE*/
+}  
+section.chi_siamo p{
+    hyphens: none;
+}
+article.colonna a{
+   color: black;
+   text-decoration: none;
+   padding-top: 50px;
+   font-size: 16px;
+   text-align: left;
+} 
+article.colonna a:hover{
+    opacity:0.8;
+}
+article.colonna a.tag_home{
+    font-family: 'Staatliches', 'Arial', sans-serif;
+}
+article.colonna a.tag_home.yellow{
+    color: #fedf6e;
+    text-transform: uppercase;
+}
+article.colonna a.tag_home.green{
+    color: #1bcf81;
+}
+article.colonna a.tag_home.orange{
+    color: #ff7f50;
+}
+article.colonna.show_mobile{
+    display: none;
+}
+/*mail form*/
+body>div.mail_form{
+    margin-top: 10px;
+   /* margin-bottom: 150px;*/
+    width: 100%;
+    height: auto;
+    padding: 20px 60px 20px 60px;
+    text-align: center;
+}
+body>div.mail_form h4{
+    font-size: 32px;
+    text-align: center;
+}
+.img_social img{
+    padding-right: 10px;
+}
+.mail_form p{
+    padding-top: 15px;
+}
+input.email_add{
+    margin-top: 20px;
+    margin-right: 5px;
+    color: #2d2d2d;
+    padding: 10px 40px;
+    border: 1px solid grey;
+    cursor: pointer;
+  }
+input.send_butt{
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    /*border: 2px solid black;*/
+    border-radius: 3px;
+    cursor: pointer;
+  }
+/* every each 3 articoles */
+  p.scopri_altro{
+      margin-top: 40px;
+      margin-bottom: 40px;
+      text-align: center;
+      font-size: 24px;
+  }
+  a.scopri{
+    color: #2d2d2d;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif; 
+    }
+  hr{ margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+      border: 0.5px solid black;
+  }
+
+  /*footer*/
+/* FOOTER con "display: flex" */
+footer {
+    background-color: #e5e5e5;
+    color: #2d2d2d;
+    height: 150px;
+    margin-top: 40px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* colonne a tre del FOOTER */
+footer .colonna {
+    width: 33.33%;
+}
+/* colore link a email */
+footer .colonna a {
+    color: #2d2d2d;
+}
+footer .colonna a:hover {
+    color: #2d2d2d;
+}
+/* menu social flex */
+footer .menu_social {
+    display: flex;
+    width: auto;  
+    justify-content: center;
+    text-align: right;
+}
+/* i link portano ai social di MOHOLE */
+.fab {
+    padding-left: 55px;
+    font-size:36px;
+}
+footer a {
+    opacity: 1;
+    
+}
+footer p {
+    font-size: 12px;
+    text-align: justify;
+}
+footer .menu_social a:hover  {
+    opacity: 0.6;
+} 
+footer #disclaimer p {
+    text-align: left;          
+} 
+footer  h5,
+footer p {
+    text-align: center;
+}
+/*fine pagina home*/
+/*titoli in citta / fuori città / lifestyle*/
+h2.page_title{
+    font-size: 49px;
+    padding-top: 30px;
+    text-align: center;
+}
+/*paragrafo titoli in citta / fuori città / lifestyle*/
+div.intro_pag{
+    padding: 30px 200px 30px 200px;
+    text-align: center;
+}
+div.intro_pag p{
+    text-align: left;
+    font-size: 24px; 
+}
+/* Filter and search options */
+#buttons, #search {
+    margin: 50px 5px 30px 5px;
+    text-align: left;
+}
+/* Filter buttons */
+.js-filterbar button {
+	background-color: #2d2d2d;
+    margin-right: 5px;
+    margin-left: 50px;
+    padding: 4px 10px 4px 10px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+}
+.js-filterbar button:hover/* , .js-filterbar button.active */{
+    opacity: 0.6;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*single article*/
+aside.banner_single{
+    /*width: 100%;
+    height: 400px;
+    background: url(img/villa_panza1.jpg) no-repeat center center;*/
+    background-size: cover;
+}
+aside.banner_single p{
+    font-family: 'Staatliches', 'Arial', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+section.single_article .colonna.trenta{
+    width: 35%;
+}
+section.single_article .colonna.settanta{
+    width: 65%;
+}
+article.colonna.trenta div.info_utili{
+    padding: 15px 15px;
+    margin-bottom: 20px;
+}
+article.colonna.trenta div.info_utili p{
+    font-size: 16px;
+}
+section.articoli_correl{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+section.articoli_correl .colonna{
+    width: 20%;
+    padding: 5px 5px;
+    text-align: center;
+    margin-top: 10px;
+ }
+ h4.art_corr{
+     text-align: center;
+     font-size: 32px;
+     margin-top: 30px;
+     margin-bottom: 25px;
+ }
+ 
+/*pag. chi siamo*/
+
+section.presentazione .colonna.nostra_foto{
+    width: 35%;
+    text-align: center;
+}
+section.presentazione .colonna.settanta{
+    width: 65%;
+}
+
+article.colonna h5.our_name{
+   font-size: 32px;
+   text-align: center;
+}
+section.presentazione p{
+    text-align: left;
+    font-size: 20px;
+}
+hr.our_presentation{
+    margin-left: 0px;
+    margin-right: 0px;
+    border: 0.5px solid black;
+    margin-top: 30px;
+}
+
+/* form contatti */   
+.containe {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    /*position: relative;*/
+  }
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea,
+  #contact button[type="submit"] {
+    font: 400 12px/16px "Source Sans Pro", Helvetica, Arial, sans-serif;
+  }
+  #contact {
+    padding: 25px;
+    margin: 20px 0;
+   /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);*/
+  }
+  #contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  #contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+  }
+  #contact input[type="text"]:hover,
+  #contact input[type="email"]:hover,
+  #contact input[type="tel"]:hover,
+  #contact input[type="url"]:hover,
+  #contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+  }
+  #contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+  }
+  #contact button[type="submit"] {
+    cursor: pointer;
+    width: 15%;
+    border: none;
+    background: black;
+    color: #FFF;
+    /*margin: 0 0 5px;*/
+    margin: 0% 40% ;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+/* MEDIA QUERY */
 @media screen and (max-width:1024px){
     .nav-links{
         width: 60%;
     }
+    /*riduco margin top e bottom di chi_siamo home*/
+    section.chi_siamo{
+        margin: 20px 5px 50px 5px;
+        text-align: center;   
+    }
+    section .colonna p{
+        font-size: 18px;
+    }  
+    /*intro delle category*/
+    div.intro_pag{
+        padding: 30px 50px 10px 50px;
+        text-align: center;
+        }
+    /* i link portano ai social di MOHOLE */
+.fab {
+    padding-left: 35px;
+    font-size:36px;
 }
-
+    /*single page*/
+    section.articoli_correl{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    /*single page*/
+    section.articoli_correl{
+        margin-left: 5px;
+        margin-right: 5px;
+    } 
+    /* filter buttons*/
+    .js-filterbar button{
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-right: 15px;
+    }
+    #buttons, #search {
+        margin: 20px 0px 20px 0px;
+        text-align: left;
+      
+    } 
+    /*articoli correlati*/
+    section.articoli_correl .colonna{
+        width: 25%;
+     }
+     article.colonna.via_1200{
+         display: none;
+     }
+}
 @media screen and (max-width:768px){
     body{
         overflow-x: hidden;
-        cursor: pointer;
+        margin-left: 0px;
+        margin-right: 0px;
     }
    .nav-links{
        position: absolute;
        right: 0px;
-       height: 92vh;
-       top: 8vh;
-       background-color: #5d4954;
+       height: 96vh;
+       top: 10vh;
+       background-color: white;
        display: flex;
        flex-direction: column;
-       align-items: center;
-       width: 100%; /*va a 100*/
+       align-items: center;/*vertical align for the element NB nel blog provare a mettere justify content center*/ 
+       width: 100% /*mettere a 100% per coprire tutto*/;
        transform: translateX(100%);
-       transition: transform 0.5s ease-in;
+       transition: transform 0.6s ease-in;
    }
    .nav-links li{
        opacity: 0;
    }
+   .nav-links a{
+    font-size: 24px;
+}
    .burger{
        display: block;
    }
+   /*nascondo la voce orizzontale contatti*/
+   .contact_menu{
+       display: none;
+   }
+   li.hidden{
+       display: block;
+   }
+   h1{
+       font-size: 90px;
+   }
+    section{
+        padding-left: 5px;
+        padding-right: 5px;
+   }
+   section.chi_siamo .colonna{
+    width: 100%;
+    }
+    section.chi_siamo{
+        margin-top: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    section.chi_siamo img.foto_team{
+        display: none;
+    }
+    section .colonna{
+        width: 50%;
+        padding: 10px 10px;
+        /*text-align: center;*/
+        margin-top: 15px;
+    }
+    article.colonna.show_mobile{
+        display: block;
+    }
+    /*last 3 article are hidden*/
+    article.colonna.sparisci{
+        display: none;
+    }
+    /*titoli categoria home*/
+    button.categoria{
+        padding: 5px 15px;
+        margin-left: 15px;
+        font-size: 36px;
+    }
+    hr{ margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+      }
+    /* i link portano ai social di MOHOLE */
+.fab {
+    padding-left: 25px;
+    font-size:33px;
+}
+    /*paragrafo titoli in citta / fuori città / lifestyle*/
+    div.intro_pag{
+    padding: 30px 15px 10px 15px;
+    text-align: center;
+    }
+    div.intro_pag p{
+        text-align: left;
+        font-size: 21px; 
+    }   
+    /*single article*/
+    section.single_article .colonna.trenta{
+        width: 100%;
+    }
+    h2.page_title{
+        font-size: 30px;
+        padding-top: 15px;
+        text-align: center;
+    }
+    /*articoli correlati*/
+    section.articoli_correl .colonna{
+        width: 33.33%;
+     }
+     article.colonna.via_768{
+         display: none;
+     }
+    section.single_article .colonna.settanta{
+        width: 100%;
+    } 
+    /*pagina chi siamo*/
+    section.presentazione .colonna.nostra_foto{
+        width: 100%;
+    }
+    section.presentazione .colonna.nostra_foto img{
+        text-align: center;
+    }
+    section.presentazione .colonna.settanta{
+        width: 100%;
+    } 
+    section.presentazione img{
+        text-align: center;
+    }
+    /* selezione categorie filter buttons*/
+    .js-filterbar button{
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-right: 15px;
+    }
+    #buttons, #search {
+        margin: 20px 0px 20px 0px;
+        text-align: left; 
+    } 
+}
+/*da iPhone plus in giù*/
+@media screen and (max-width:500px){
+    section .colonna{
+        width: 100%;
+        padding: 10px 10px;
+        /*text-align: center;*/
+        margin-top: 15px;
+    }
+    article.colonna.show_mobile{
+        display: none;
+    }
+    /*last 3 article are hidden*/
+    article.colonna.sparisci{
+        display: block;
+    }
+    section.articoli_correl .colonna{
+        width: 50%;
+     }
+     article.colonna.via_mobile{
+         display: none;
+     }
+     /* i link portano ai social di MOHOLE */
+.fab {
+    padding-left: 13px;
+    font-size:27px;
+    }
 }
 .nav-active{
     transform: translateX(0%);
 }
-
+/* start menu animation */
 @keyframes navLinkFade{
     from{
         opacity: 0;
@@ -96,3 +777,11 @@ nav{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
 }
+/* end menu animation */
+
+
+
+      
+    
+      
+     

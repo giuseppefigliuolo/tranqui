@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <!-- viewport controllo zoom bloccato-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+         <!-- X-UA er compatibilità di alcuni aspetti di Internet Explorer -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- autore del sito -->
+        <meta name="author" content="Andrea Guffi, Andrea Lepori">
+    
+        <!-- meta description -->
+        <meta name="description" content="Il sito ufficiale di Tranqui">
+               
+        <!-- meta keywords -->
+        <meta name="keywords" content="Milano, blog, tranquillità">
+    
+         <!-- link google font -->
+         <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap" rel="stylesheet">
+        
+        <title>Tranqui</title>
+    
+        <!-- carico il file per le icone Fontawesome -->
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    
+        <!-- link file style css -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logotranqui.svg" alt="" width="100" height="auto">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a class="active"href="in_citta.html">In città</a>
+            </li>
+            <li>
+                <a href="fuori_citta.html">Fuori città</a>
+            </li>
+            <li>
+                <a href="lifestyle.html">Lifestyle</a>
+            </li>
+            <li>
+                <a href="chi_siamo.html">Chi siamo</a>
+            </li>
+            <!--<li class="hidden">
+                <a href="#">Contatti</a>
+            </li>-->
+        </ul>
+            <div class="contact_menu">
+                <li class="search_bar"><a href="#"><i class="fas fa-search"></i></a></li>
+            </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <h2 class="page_title">In città</h2>
+
+    <div class="intro_pag">
+        <p>Oasi di tranquillità a Milano? Ti assicuriamo che esistono.</p>
+        <p>Ci siamo spostati tanto in cerca di luoghi dove poter staccare dalla frenesia della città:
+        ci siamo concessi una pausa in caffè letterari che prima non conoscevamo, visto nuovi negozietti, camminato per aree verdi e molto altro ancora. 
+        Adesso siamo pronti a condividere tutto nei nostri articoli.</p> 
+    </div>
+    
+
+<div id="buttons" class="js-filterbar"></div>
+<div id="gallery">
+<section> 
+
+    <article class="colonna" data-tags="Architettura">    
+        <a href="article_villa_inv.html"><img src="img/villa_inv2_small.jpg" alt="" width="100%" height="auto"></a>
+        <h3>Milano, i fenicotteri e villa Invernizzi</h3>
+        <button class="small yellow" name="nome" onclick="location.href='in_citta.html'"><b>Architettura</b></button>
+        <p>Situata al <b>civico 9 di via dei Cappuccini</b>, 
+        è una villetta in stile liberty famosa per i suoi particolari abitanti: <b>i fenicotteri rosa.</b>
+        </p> 
+    </article> 
+    <article class="colonna" data-tags="Bar, Libreria">       
+        <a href="#"><img src="img/fred.jpg" alt="" width="100%" height="auto"></a> 
+        <a href="#"><h3>5 mgliori bar/librerie</h3></a>
+        <button class="small yellow" name="nome" onclick="location.href='in_citta.html'"><b>Bar</b></button>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Omnis corrupti soluta aperiam, quidem a mollitia explicabo 
+          accusantium fugiat praesentium delectus iusto.
+         </p>    
+    </article> 
+      
+     <article class="colonna" data-tags="Parchi">       
+        <a href="#"><img src="img/montestella.jpg" alt="" width="100%" height="auto"></a> 
+        <a href="#"><h3>Montestella:la montagna di Milano</h3></a>
+        <button class="small yellow" name="nome" onclick="location.href='in_citta.html'"><b>Parco</b></button>
+        <p><b>Verde</b>, ben tenuta, amata dai podisti e molto <b>romantica: la montagnetta di San Siro</b> è il regalo che Milano,
+            piegata dai bombardamenti ma piena di voglia di ricominciare,
+            si è fatta negli <b>anni Cinquanta.</b>
+        </p>    
+    </article> 
+    <article class="colonna" data-tags="Cultura">    
+        <a href="#"><img src="img/mudec.jpg" alt="" width="100%" height="auto"></a>
+        <a href="#"><h3>Articolo su una mostra</h3></a>
+        <button class="small yellow" name="nome" onclick="location.href='in_citta.html'"><b>Cultura</b></button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+         Omnis corrupti soluta aperiam, quidem a mollitia explicabo 
+            accusantium fugiat praesentium delectus iusto.
+        </p>
+    </article>  
+    <article class="colonna" data-tags="Bar, Libreria">       
+       <a href="#"><img src="img/walden_small.jpg" alt="" width="100%" height="auto"></a> 
+       <a href="#"><h3>Walden, la capanna in città</h3></a>
+       <button class="small yellow" name="nome" onclick="location.href='in_citta.html'"><b>Bar / Libreria</b></button>
+        <p>Siamo stati da Walden: il nuovo <b>bistrot-libreria</b> ispirato alla natura in <b>zona Ticinese.</b>
+             Musica jazz, cucina vegetariana e una scelta di editoria indipendente.
+        </p>     
+   </article> 
+        
+</section>
+</div>
+<footer>
+    <div class="colonna" id="disclaimer">
+        
+        <p>Questo sito è stato creato a scopo didattico, 
+           dagli allievi del primo anno Scuola Web & App Mohole.
+           Le situazioni create sono immaginarie e create per produrre 
+           contenuti dimostrativi fittizi.
+        </p>
+</div>  
+
+<div class="colonna"></div>                    
+<div class="colonna"> 
+   <!--<h5>be social</h5> -->  
+              
+    <div class="menu_social">                    
+    <a href="https://www.facebook.com/mohole/" id="fb" title="facebook" target="_blank">
+        <i class="fab fa-facebook-square"></i>
+    </a>
+    <a href="https://www.instagram.com/scuolamohole/?hl=it" id="fb" title="instagram" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>                        
+    <a href="https://www.youtube.com/channel/UCOu3XN2DB6lFEQTIeo41Nxw" id="yt" title="youtube" target="_blank">
+        <i class="fab fa-youtube"></i>
+    </a>                             
+    </div>
+</div> 
+</footer>
+
+<script src="js/jquery.js"></script> 
+<script src="js/app.js"></script>
+<script src="js/filter-tags.js"></script>
+
+</body>
+</html>

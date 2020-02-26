@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <!-- viewport controllo zoom bloccato-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+         <!-- X-UA er compatibilità di alcuni aspetti di Internet Explorer -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- autore del sito -->
+        <meta name="author" content="Andrea Guffi, Andrea Lepori">
+    
+        <!-- meta description -->
+        <meta name="description" content="Il sito ufficiale di Tranqui">
+               
+        <!-- meta keywords -->
+        <meta name="keywords" content="Milano, blog, tranquillità">
+    
+         <!-- link google font -->
+         <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap" rel="stylesheet">
+        
+        <title>Tranqui</title>
+    
+        <!-- carico il file per le icone Fontawesome -->
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    
+        <!-- link file style css -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logotranqui.svg" alt="" width="100" height="auto">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="in_citta.html">In città</a>
+            </li>
+            <li>
+                <a class="active" href="fuori_citta.html">Fuori città</a>
+            </li>
+            <li>
+                <a href="lifestyle.html">Lifestyle</a>
+            </li>
+            <li>
+                <a href="chi_siamo.html">Chi siamo</a>
+            </li>
+            <!--<li class="hidden">
+                <a href="#">Contatti</a>
+            </li>-->
+        </ul>
+            <div class="contact_menu">
+                <li class="search_bar"><a href="#"><i class="fas fa-search"></i></a></li>
+            </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <h2 class="page_title">Fuori città</h2>
+    <div class="intro_pag">
+        <p>Se hai voglia di evadere dalla città anche solo per un giorno e sei indeciso sulla meta,
+            questo è il posto adatto a te. Partendo da Milano infatti in poche ore è
+            possibile vedere posti magnifici, visitare città d’arte, 
+            trascorrere una giornata in totale armonia con la natura o rilassarsi in terme da sogno.
+        </p>    
+    </div>
+    
+
+<div id="buttons" class="js-filterbar"></div>
+<div id="gallery">
+<section> 
+      <article class="colonna" data-tags="1 ora,2 ore,Montagna">    
+         <a href="article_rifugio_sev.html"><img src="img/croce_rifugio_sev_small.jpg" alt="" width="100%" height="auto"></a>
+         <a href="article_rifugio_sev.html"><h3>Rifugio Sev</h3></a>
+         <button class="small green" name="nome" onclick="location.href='fuori_citta.html'"><b>Montagna</b></button>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Omnis corrupti soluta aperiam, quidem a mollitia explicabo 
+             accusantium fugiat praesentium delectus iusto.
+         </p>         
+     </article>  
+     <article class="colonna"  data-tags="1 ora,2 ore,Lago">       
+        <a href="#"><img src="img/lago_dorta.jpg" alt="" width="100%" height="auto"></a> 
+        <a href="#"><h3>Lago d'Orta</h3></a>
+        <button class="small green" name="nome" onclick="location.href='fuori_citta.html'"><b>Lago</b></button>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Omnis corrupti soluta aperiam, quidem a mollitia explicabo 
+          accusantium fugiat praesentium delectus iusto.
+         </p>    
+    </article> 
+     <article class="colonna" data-tags="Bicicletta,1 ora">
+         <a href="#"><img src="img/ciclovia.jpg" alt="" width="100%" height="auto"></a>
+         <a href="#"><h3>Ciclovia del Lambro</h3></a>
+         <button class="small green" name="nome" onclick="location.href='fuori_citta.html'"><b>Bicicletta</b></button>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+             Omnis corrupti soluta aperiam, quidem a mollitia explicabo 
+             accusantium fugiat praesentium delectus iusto. 
+         </p>
+      </article>
+      <article class="colonna"  data-tags="Montagna,1 ora">       
+        <a href="#"><img src="img/monte_palanzone.jpg" alt="" width="100%" height="auto"></a> 
+        <a href="#"><h3>Monte Palanzone</h3></a>
+        <button class="small green" name="nome" onclick="location.href='fuori_citta.html'"><b>Montagna</b></button>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Omnis corrupti soluta aperiam, quidem a mollitia explicabo 
+          accusantium fugiat praesentium delectus iusto.
+         </p>    
+      </article> 
+      <article class="colonna" data-tags="Architettura,2 ore">    
+         <a href="#"><img src="img/labirinto_small.jpg" alt="" width="100%" height="auto"></a>
+         <a href="#"><h3>Labirinto della masone</h3></a>
+         <button class="small green" name="nome" onclick="location.href='fuori_citta.html'"><b>Architettura</b></button>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Omnis corrupti soluta aperiam, quidem a mollitia explicabo 
+             accusantium fugiat praesentium delectus iusto.
+         </p>        
+     </article>  
+     <article class="colonna" data-tags="Lago,1 ora">
+         <a href="#"><img src="img/lago_iseo_small.jpg" alt="" width="100%" height="auto"></a>
+         <a href="#"><h3>Lago D'Iseo</h3></a>
+         <button class="small green" name="nome" onclick="location.href='fuori_citta.html'"><b>Lago</b></button>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+             Omnis corrupti soluta aperiam, quidem a mollitia explicabo 
+             accusantium fugiat praesentium delectus iusto. 
+         </p>
+      </article>    
+</section>
+</div>
+<footer>
+    <div class="colonna" id="disclaimer">
+        
+        <p>Questo sito è stato creato a scopo didattico, 
+           dagli allievi del primo anno Scuola Web & App Mohole.
+           Le situazioni create sono immaginarie e create per produrre 
+           contenuti dimostrativi fittizi.
+        </p>
+</div>  
+
+<div class="colonna"></div>                    
+<div class="colonna"> 
+   <!--<h5>be social</h5> -->  
+              
+    <div class="menu_social">                    
+    <a href="https://www.facebook.com/mohole/" id="fb" title="facebook" target="_blank">
+        <i class="fab fa-facebook-square"></i>
+    </a>
+    <a href="https://www.instagram.com/scuolamohole/?hl=it" id="fb" title="instagram" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>                        
+    <a href="https://www.youtube.com/channel/UCOu3XN2DB6lFEQTIeo41Nxw" id="yt" title="youtube" target="_blank">
+        <i class="fab fa-youtube"></i>
+    </a>                             
+    </div>
+</div> 
+</footer>
+ 
+<script src="js/jquery.js"></script>
+<script src="js/app.js"></script>
+<script src="js/filter-tags.js"></script>
+
+</body>
+</html>
