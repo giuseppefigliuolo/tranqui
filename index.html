@@ -1,260 +1,38 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- viewport controllo zoom bloccato-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-     <!-- X-UA er compatibilità di alcuni aspetti di Internet Explorer -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- autore del sito -->
-    <meta name="author" content="Andrea Guffi, Andrea Lepori">
-
-    <!-- meta description -->
-    <meta name="description" content="Il sito ufficiale di Tranqui">
-           
-    <!-- meta keywords -->
-    <meta name="keywords" content="Milano, blog, tranquillità">
-
-     <!-- link google font -->
-     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap" rel="stylesheet">
-    
-    <title>Tranqui</title>
-
-    <!-- carico il file per le icone Fontawesome -->
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-
-    <!-- link file style css -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>navigation</title>
 </head>
 <body>
     <nav>
         <div class="logo">
-            <a href="index.html">
-                <img src="img/logotranqui.svg" alt="" width="100" height="auto">
-            </a>
+            <h4>the nav</h4>
         </div>
         <ul class="nav-links">
             <li>
-                <a href="in_citta.html">In città</a>
+                <a href="#">Home</a>
             </li>
             <li>
-                <a href="fuori_citta.html">Fuori città</a>
+                <a href="#">About</a>
             </li>
             <li>
-                <a href="lifestyle.html">Lifestyle</a>
+                <a href="#">Work</a>
             </li>
             <li>
-                <a href="chi_siamo.html">Chi siamo</a>
+                <a href="#">Project</a>
             </li>
-            <!--<li class="hidden">
-                <a href="#">Contatti</a>
-            </li>-->
         </ul>
-            <div class="contact_menu">
-                <li class="search_bar"><a href="#"><i class="fas fa-search"></i></a></li>
-            </div>
         <div class="burger">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
     </nav>
-    <aside id="banner"> 
-        <h1>#tranqui</h1>
-        <p>diaro di sopravvivenza nella giungla urbana</p>
-    </aside>
-<main>
-    <section class="chi_siamo">
-        <article class="colonna testo"> 
-            <h4>chi siamo</h4>
-            <p>Ciao, siamo Andrea e Andrea e la passione per la montagna e la curiosità di 
-                scoprire posti nuovi (unite ad un basso livelli di sopportazione per il rumore del traffico) 
-                ci hanno portato ad aprire <b>#tranqui, il nostro fantastico blog.</b>  
-            </p>
-             <p><b>#Tranqui</b> è un blog e insieme <b>uno stato d’animo</b>: esprime appieno
-                  la sensazione che ti vogliamo trasmettere. 
-             </p>
-             <p><b>#Tranqui è una guida</b>: ti farà <b>conoscere</b> tutti quei luoghi dove 
-                 potrai <b>fuggire dal caos</b> della città.
-             </p>
-             <p><b>#Tranqui</b> ti racconta le <b>Oasi di Pace</b>, angoli metropolitani di serenità, Fuori Città, le migliori mete fuori porta e poi Lifestyle. </p>
-        <button class="puls_chi_siamo" name="nome" onclick="location.href='chi_siamo.html'">Presentiamoci!</button>
-        </article>
-        <article class="colonna">
-            <img class="foto_team" src="img/nostro_team.jpg" alt="foto team tranqui" width="85%" height="auto">
-        </article>
-         
-    </section>
- 
-    <button class="categoria yellow" name="nome" onclick="location.href='in_citta.html'">in città</button>
-     
-    <section> 
-        <article class="colonna">    
-            <a href="article_villa_inv.html"><img src="img/villa_inv2_small.jpg" alt="foto giardino villa invernizzi" width="100%" height="auto"></a>
-            <a href="article_villa_inv.html"><h3>Milano, i fenicotteri e villa Invernizzi</h3></a>
-            <!--<a class="tag_home yellow" href="#">Architettura</a> -->
-            <button class="small yellow" name="nome" onclick="location.href='in_citta.html'"><b>Architettura</b></button>
-            <p>Situata al <b>civico 9 di via dei Cappuccini</b>, 
-            è una villetta in stile liberty famosa per i suoi particolari abitanti: <b>i fenicotteri rosa.</b>
-            </p> 
-        </article> 
-        <article class="colonna">       
-           <a href="#"><img src="img/walden_small.jpg" alt="foto walden" width="100%" height="auto"></a> 
-           <a href="#"><h3>Walden, la capanna in città</h3></a>
-           <!--<a class="tag_home yellow" href="#">bar/libreria</a>-->
-           <button class="small yellow" name="nome" onclick="location.href='in_citta.html'"><b>Libreria</b></button>
-            <p>Siamo stati da Walden: il nuovo <b>bistrot-libreria</b> ispirato alla natura in <b>zona Ticinese.</b>
-                 Musica jazz, cucina vegetariana e una scelta di editoria indipendente.
-            </p>     
-       </article>   
-        <article class="colonna">
-            <a href="#"><img src="img/montestella.jpg" alt="foto montestella" width="100%" height="auto"></a>
-        <a href="#"><h3>Montestella: la montagnetta</h3></a>
-        <!--<a class="tag_home yellow" href="#">area verde</a>-->
-        <button class="small yellow" name="nome" onclick="location.href='in_citta.html'"><b>Area verde</b></button>
-            <p><b>Verde</b>, ben tenuta, amata dai podisti e molto <b>romantica: la montagnetta di San Siro</b> è il regalo che Milano,
-                piegata dai bombardamenti ma piena di voglia di ricominciare,
-                si è fatta negli <b>anni Cinquanta.</b>
-            </p>   
-         </article>
-         <article class="colonna show_mobile">       
-            <a href="#"><img src="img/sarpi_otto.jpg" alt="" width="100%" height="auto"></a> 
-            <a href="#"><h3>5 mgliori bar/librerie</h3></a>
-            <button class="small yellow" name="nome" onclick="location.href='in_citta.html'"><b>Bar</b></button>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Omnis corrupti soluta aperiam, quidem a mollitia explicabo 
-              accusantium fugiat praesentium delectus iusto.
-             </p> 
-        </article> 
-    </section>
-    <a class="scopri" href="in_citta.html"><p class="scopri_altro">TUTTI GLI ARTICOLI DELLA SEZIONE>></p></a>
-    <hr>
-    <button class="categoria green" name="nome" onclick="location.href='fuori_citta.html'">fuori città</button>  
 
-    <section>  
-        <article class="colonna">
-            <a href="#"><img src="img/lago_dorta.jpg" alt="foto lago d'Orta" width="100%" height="auto"></a>
-            <a href="#"><h3>Lago d'Orta</h3></a>
-            <!--<a class="tag_home green" href="#">lago famiglia</a>-->
-            <button class="small green" name="nome" onclick="location.href='fuori_citta.html'"><b>Lago</b></button>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Omnis corrupti soluta aperiam, quidem a mollitia explicabo 
-                accusantium fugiat praesentium delectus iusto. 
-            </p>
-        </article>
-        <article class="colonna">       
-            <a href="article_rifugio_sev.html"><img src="img/croce_rifugio_sev_small.jpg" alt="foto rifugio sev" width="100%" height="auto"></a>  
-            <a href="article_rifugio_sev.html"><h3>Rifugio Sev</h3></a>
-            <button class="small green" name="nome" onclick="location.href='fuori_citta.html'"><b>Montagna</b></button>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Omnis corrupti soluta aperiam, quidem a mollitia explicabo 
-            accusantium fugiat praesentium delectus iusto.
-            </p>    
-        </article> 
-         <article class="colonna">    
-            <a href="#"><img src="img/ciclovia.jpg" alt="foto ciclovia del Lambro" width="100%" height="auto"></a>
-            <a href="#"><h3>Ciclovia del Lambro</h3></a>
-            <button class="small green" name="nome" onclick="location.href='fuori_citta.html'"><b>Bicicletta</b></button>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Omnis corrupti soluta aperiam, quidem a mollitia explicabo 
-            accusantium fugiat praesentium delectus iusto.
-            </p>
-        </article>
-        <article class="colonna show_mobile">       
-            <a href="#"><img src="img/villa_panza_2.jpg" alt="foto villa Panza" width="100%" height="auto"></a>  
-            <a href="#"><h3>Villa Panza</h3></a>
-            <button class="small green" name="nome" onclick="location.href='fuori_citta.html'"><b>Architettura</b></button>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Omnis corrupti soluta aperiam, quidem a mollitia explicabo 
-              accusantium fugiat praesentium delectus iusto.
-             </p>
-        </article>    
-    </section>
-        <a class="scopri" href="fuori_citta.html"><p class="scopri_altro">TUTTI GLI ARTICOLI DELLA SEZIONE>></p></a>
-        <hr>
-        <button class="categoria orange" name="nome" onclick="location.href='lifestyle.html'">Lifestyle</button>  
-    <section>  
-        <article class="colonna">
-            <a href="#"><img src="img/ragazza_matita.jpg" alt="" width="100%" height="auto"></a>
-            <a href="#"><h3>5 cosigli utili per arrivare al week end</h3></a>
-            <!--<a class="tag_home orange" href="#">travel</a>-->
-            <button class="small orange" name="nome" onclick="location.href='lifestyle.html'"><b>Consigli</b></button>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                 Omnis corrupti soluta aperiam, quidem a mollitia explicabo 
-                accusantium fugiat praesentium delectus iusto. 
-            </p> 
-        </article>
-        <article class="colonna">       
-            <a href="#"><img src="img/fit_prime.jpg" alt="immagine schermo telefono app fitprime" width="100%" height="auto"></a>
-            <a href="#"><h3>Sorridi: è' arrivata fitprime</h3></a>
-            <button class="small orange" name="nome" onclick="location.href='lifestyle.html'"><b>Palestra</b></button>
-            <p>Fitprime è l’<b>app</b> che ti permette, con un <b>unico abbonamento</b> mensile,
-                 di accedere in più di <b>300 centri sportivi</b> a Milano e nel resto d'Italia.
-            </p>
-        </article> 
-        <article class="colonna">    
-            <a href="#"><img src="img/palestra_yogaa.jpg" alt="foto persone durante lezione di yoga" width="100%" height="auto"></a>
-            <a href="#"><h3>Migliori posti per lo yoga a Milano</h3></a>
-            <button class="small orange" name="nome" onclick="location.href='lifestyle.html'"><b>Yoga</b></button>
-             <p>Una classe di <b>yoga</b>, anche solo di un’ora, 
-                può <b>cambiarti</b> drasticamente <b>la qualità della vita</b> per l’intera settimana!
-                Nell' articolo troverai <b>migliori posti dove fare yoga a Milano</b> che devi visitare almeno una volta.
-            </p>
-        </article>  
-        <article class="colonna show_mobile">       
-            <a href="#"><img src="img/running.jpg" alt="foto runner" width="100%" height="auto"></a> 
-            <a href="#"><h3>Guida ai migliori running club milanesi</h3></a>
-            <button class="small orange" name="nome" onclick="location.href='lifestyle.html'"><b>Sport</b></button>
-            <p>Correre è bello, condividere i chilometri lo è ancora di più.
-                Ecco la lista dei running club più gettonati in città.
-            </p> 
-    </article> 
-    </section>
-    <a class="scopri" href="lifestyle.html"><p class="scopri_altro">TUTTI GLI ARTICOLI DELLA SEZIONE>></p></a>
-    <hr>
-</main>
-    <div class="mail_form">
-        <h4>Restiamo in contatto</h4>
-        <p>Registrati alla nostra mail per ricevere nuove, fantastiche informazioni!</p>
-        <form action="#" method="POST" role="form">
-            <label for="email"></label>
-            <input class="email_add" type="text" id="email" name="email" placeholder="e-mail">
-            <input class="send_butt" type="submit" value="Ok">
-         </form>
-    </div>
-
-<footer>
-    <div class="colonna" id="disclaimer">
-        <p>Questo sito è stato creato a scopo didattico, 
-           dagli allievi del primo anno Scuola Web & App Mohole.
-           Le situazioni create sono immaginarie e create per produrre 
-           contenuti dimostrativi fittizi.
-        </p>
-    </div>  
-
-    <div class="colonna"></div>                    
-    <div class="colonna"> 
-   <!--<h5>be social</h5> -->  
-              
-    <div class="menu_social">                    
-    <a href="https://www.facebook.com/mohole/" id="fb" title="facebook" target="_blank">
-        <i class="fab fa-facebook-square"></i>
-    </a>
-    <a href="https://www.instagram.com/scuolamohole/?hl=it" id="fb" title="instagram" target="_blank">
-        <i class="fab fa-instagram"></i>
-    </a>                        
-    <a href="https://www.youtube.com/channel/UCOu3XN2DB6lFEQTIeo41Nxw" id="yt" title="youtube" target="_blank">
-        <i class="fab fa-youtube"></i>
-    </a>                             
-    </div>
-</div> 
-</footer>
-
-<script src="js/jquery.js"></script>
-<script src="js/app.js"></script>
+    <script src="app.js"></script>
     
 </body>
 </html>
