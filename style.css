@@ -21,7 +21,7 @@ h2,h3,h4,h5{
 
 h1{
     font-family: 'Cabin Sketch', cursive;
-    padding-top: 475px;
+    padding-top: 450px;
     font-size: 120px;
     align-items: center;
     align-content: center;
@@ -103,7 +103,7 @@ nav{
     background-color: black;
     margin: 5px;
     margin-right: 20px;
-    transition: all 0.1s ease;
+    transition: all 0.8s ease;
 }
 li.hidden{
     display: none;
@@ -608,7 +608,7 @@ hr.our_presentation{
        position: fixed;
        right: 0px;
        height: 96vh;
-       top: 10vh;
+       top: 8vh;
        background-color: white;
        display: flex;
        flex-direction: column;
@@ -616,9 +616,7 @@ hr.our_presentation{
        width: 100% /*mettere a 100% per coprire tutto*/;
        transform: translateX(100%);
        transition: transform 0.6s ease-in;
-       z-index: 0;
-
-       
+       z-index: 0;   
    }
    .nav-links li{
        opacity: 0;
@@ -738,6 +736,9 @@ hr.our_presentation{
 }
 /*da iPhone plus in giù*/
 @media screen and (max-width:500px){
+    .nav-links{
+        top: 9vh;
+    }
     section .colonna{
         width: 100%;
         padding: 10px 10px;
@@ -749,7 +750,7 @@ hr.our_presentation{
     }
     /*banner's title*/
     h1{
-        padding-top: 400px;
+        padding-top: 350px;
     }
     
     /*last 3 article are hidden*/
