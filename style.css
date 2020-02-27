@@ -605,7 +605,7 @@ hr.our_presentation{
         
     }
    .nav-links{
-       position: absolute;
+       position: fixed;
        right: 0px;
        height: 96vh;
        top: 10vh;
