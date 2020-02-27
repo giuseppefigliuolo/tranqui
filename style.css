@@ -747,6 +747,11 @@ hr.our_presentation{
     article.colonna.show_mobile{
         display: none;
     }
+    /*banner's title*/
+    h1{
+        padding-top: 400px;
+    }
+    
     /*last 3 article are hidden*/
     article.colonna.sparisci{
         display: block;
@@ -766,6 +771,7 @@ hr.our_presentation{
 .nav-active{
     transform: translateX(0%);
 }
+
 /* start menu animation */
 @keyframes navLinkFade{
     from{
