@@ -252,7 +252,7 @@ article.colonna.show_mobile{
     display: none;
 }
 /*mail form*/
-body>div.mail_form{
+.mail_form{
     margin-top: 10px;
    /* margin-bottom: 150px;*/
     width: 100%;
@@ -260,7 +260,7 @@ body>div.mail_form{
     padding: 20px 60px 20px 60px;
     text-align: center;
 }
-body>div.mail_form h4{
+.mail_form h4{
     font-size: 32px;
     text-align: center;
 }
@@ -794,6 +794,114 @@ hr.our_presentation{
     transform: rotate(45deg) translate(-5px,-6px);
 }
 /* end menu animation */
+
+/* Modifiche di Giuseppe */
+@media all and (min-width: 1300px) {
+    
+    .widthReduced {
+        width: 88%;
+    }
+    
+    .sticky-container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    
+    .container-side-bar {
+        width: 12%;
+    }
+    
+    .side-bar {
+        position: sticky;
+        top: 96px;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: 'Source Sans Pro', sans-serif;
+        box-shadow: -2px 2px 12px rgba(0, 0, 0, 0.13);
+    }
+    .side-bar ul li a {
+        text-decoration: none;
+        font-size: 2.65vh;
+        color: black;
+    }
+
+    .side-bar ul li a:hover {
+        font-family: 'Cabin Sketch', cursive;
+        font-size: 2.9vh;
+        font-weight: 400;
+    }
+
+    .side-bar ul li {
+        list-style: none;
+        margin: 2.33vh;
+        text-align: center;
+        font-weight: 300;
+    }
+
+    .side-bar ul li:nth-child(1) {
+        font-weight: 700;
+    }
+
+    .side-bar ul {
+        align-self: center;
+        margin-top: -3.2vh;
+    }
+
+    .input-src {
+        display: flex;
+        border-radius: 10px;
+    }
+
+    .input-src input[type=text] {
+        width: 8vw;
+        background-color: #EEEAEA;
+        padding: 0 0 0 5px;
+    }
+    
+    .input-src input::placeholder{
+        font-size: 1vw;
+        color: #898383;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    .input-src input:focus{
+        outline: none;
+    }
+    
+    .container-lenteIngrandimento {
+        background-color: #EEEAEA;
+        padding: 3% 5px;
+        margin: 3.5vh auto;
+        border-radius: 14px;
+    }
+
+    .logo-side-bar {
+        align-self: center;
+        margin-bottom: 1.8vh;
+    }
+
+    .container-lenteIngrandimento svg {
+        padding-right: 3px;
+        margin-bottom: -0.28vh;
+    }
+
+    .sbYellow{
+        background-color: #fedf6e;
+    }
+
+    .sbGreen{
+        background-color: #1bcf81;
+    }
+
+    .sbOrange{
+        background-color: #ff7f50;
+    }
+
+        
+}
 
       
  
